@@ -23,7 +23,7 @@ const workerConfig: WorkerConfig = {
       id: 'rn_ssh',
       name: 'RackNerd - SSH 端口',
       method: 'TCP_PING',
-      target: '23.94.78.145:22', // 你的 RN IP
+      target: '23.94.78.145:56789', // 你的 RN IP
       timeout: 10000,
     },
     {
