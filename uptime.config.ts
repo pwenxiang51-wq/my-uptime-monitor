@@ -48,12 +48,11 @@ const workerConfig: WorkerConfig = {
   ],
   notification: {
     webhook: {
-      // 7812901048:AAHK0SN28VNfBEUncm-xh58pZRIh3XvUTgc
       url: 'https://api.telegram.org/bot7812901048:AAHK0SN28VNfBEUncm-xh58pZRIh3XvUTgc/sendMessage',
       method: 'POST',
       payloadType: 'json',
       payload: {
-        chat_id: -1003539974591
+        chat_id: -1003539974591,
         text: '$MSG',
       },
     },
