@@ -1,10 +1,13 @@
 import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
-  title: "Wenxiang 全球监控大屏",
+  // 标题改得更霸气一点
+  title: "Wenxiang 全球运维指挥大屏",
   links: [
+    // ⚠️ 关键点：这里就是你的 RackNerd 面板链接，点击直接跳去救火
+    { link: 'https://nerdvm.racknerd.com/control.php', label: 'RackNerd 控制台', highlight: true },
+    { link: 'https://blog.wenxiang0100.workers.dev', label: '我的博客' },
     { link: 'https://github.com/lyc8503/UptimeFlare', label: 'GitHub' },
-    { link: 'https://blog.wenxiang0100.workers.dev', label: '我的博客', highlight: true },
   ],
 }
 
@@ -18,11 +21,10 @@ const workerConfig: WorkerConfig = {
       timeout: 15000,
     },
     {
-      id: 'rn_http',
-      name: 'RackNerd - 网站服务',
+      id: 'baidu_test',
+      name: '国内连通性 (Baidu)',
       method: 'GET',
-      target: 'http://23.94.78.145:80',
-      timeout: 15000,
+      target: 'https://www.baidu.com',
     },
     {
       id: 'rn_ssh',
@@ -32,11 +34,10 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'gcp_http',
-      name: 'GCP - 网站服务',
+      id: 'google_test',
+      name: '国外连通性 (Google)',
       method: 'GET',
-      target: 'http://35.212.175.192:80',
-      timeout: 15000,
+      target: 'https://www.google.com',
     },
     {
       id: 'gcp_ssh',
