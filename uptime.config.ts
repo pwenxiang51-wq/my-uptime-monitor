@@ -5,7 +5,7 @@ const pageConfig: PageConfig = {
   links: [
     // 你的 RackNerd 救火通道
     { link: 'https://nerdvm.racknerd.com/control.php', label: 'RackNerd 控制台', highlight: true },
-    { link: 'https://blog.wenxiang0100.workers.dev', label: '我的博客' },
+   
     { link: 'https://github.com/lyc8503/UptimeFlare', label: 'GitHub' },
   ],
 }
