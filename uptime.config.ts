@@ -16,7 +16,7 @@ const workerConfig: WorkerConfig = {
       id: 'my_blog',
       name: '我的博客 (CF Workers)',
       method: 'GET',
-      target: 'https://blog.wenxiang0100.workers.dev',
+      target: 'https://blog.222382.xyz',
       timeout: 15000,
     },
     {
