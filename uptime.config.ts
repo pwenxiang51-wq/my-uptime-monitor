@@ -32,9 +32,25 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '35.212.175.192:22', // 你的 GCP IP
       timeout: 10000,
+    },{
+      id: 'sink_monitor',
+      name: '我的导航站 (Sink)',
+      method: 'GET',
+      target: 'https://link.222381.xyz',
+      statusPageLink: 'https://link.222382.xyz',
+      timeout: 10000,
+    },
+    {
+      id: 'sub_monitor',
+      name: '订阅管理系统',
+      method: 'GET',
+      target: 'https://sub.222381.xyz',
+      statusPageLink: 'https://sub.222382.xyz',
+      timeout: 10000,
     },
   ],
   notification: {
+    
     webhook: {
       // 已经验证成功的 TG 管道
       url: 'https://api.telegram.org/bot7812901048:AAHK0SN28VNfBEUncm-xh58pZRIh3XvUTgc/sendMessage',
