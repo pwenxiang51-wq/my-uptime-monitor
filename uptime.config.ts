@@ -23,7 +23,7 @@ const workerConfig: WorkerConfig = {
       id: 'rn_ssh',
       name: 'RackNerd - SSH 端口',
       method: 'TCP_PING',
-      target: '23.94.78.145:56789', // 你的 RN IP
+      target: '23.94.78.145:56779', // 你的 RN IP
       timeout: 10000,
     },
     {
@@ -53,11 +53,11 @@ const workerConfig: WorkerConfig = {
     
     webhook: {
       // 已经验证成功的 TG 管道
-      url: 'https://api.telegram.org/bot7812901048:AAHK0SN28VNfBEUncm-xh58pZRIh3XvUTgc/sendMessage',
+      url: 'https://api.telegram.org/bot8428256048:AAE87lB95RHubjtz907RxeVOW_sjdQmUTzY/sendMessage',
       method: 'POST',
       payloadType: 'json',
       payload: {
-        chat_id: -1003539974591, // 你的频道 ID
+        chat_id: 8583390179, // 你的频道 ID
         text: '$MSG',
       },
     },
