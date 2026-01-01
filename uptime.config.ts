@@ -55,6 +55,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://play.222382.xyz',
       tooltip: 'Google Drive 代理服务',
       timeout: 15000,
+      expectedCodes: [200, 401],
     },
     {
       id: 'secret_note',
