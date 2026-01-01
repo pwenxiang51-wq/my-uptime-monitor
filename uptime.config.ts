@@ -49,15 +49,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'google_drive',
-      name: '我的谷歌云端硬盘',
-      method: 'GET',
-      target: 'https://play.222382.xyz',
-      tooltip: 'Google Drive 代理服务',
-      timeout: 15000,
-      expectedCodes: [200, 401],
-    },
-    {
       id: 'secret_note',
       name: '我的秘密笔记',
       method: 'GET',
