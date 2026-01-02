@@ -8,6 +8,23 @@ const pageConfig: PageConfig = {
    
     { link: 'https://github.com/lyc8503/UptimeFlare', label: 'GitHub' },
   ],
+  // === 皮肤和Logo颜色配置区域 ===
+  theme: {
+    // 开启暗黑模式，背景立刻变黑
+    mode: 'dark',
+    colors: {
+      // [核心] 这就是 Logo 和按钮的颜色！改成紫色(#9333ea)，Logo 会自动变紫
+      primary: '#9333ea',
+      // 网页大背景的颜色 (深邃黑)
+      background: '#111827',
+      // 监控卡片的背景色 (深灰，增加层次感)
+      surface: '#1f2937',
+      // 主要文字颜色 (亮白)
+      textPrimary: '#f9fafb',
+      // 次要文字颜色 (灰白)
+      textSecondary: '#d1d5db',
+    },
+  },
 }
 
 const workerConfig: WorkerConfig = {
