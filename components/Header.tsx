@@ -30,13 +30,30 @@ export default function Header({ style }: { style?: React.CSSProperties }) {
             href={location.pathname == '/' ? 'https://github.com/lyc8503/UptimeFlare' : '/'}
             target={location.pathname == '/' ? '_blank' : undefined}
           >
-            <Image
-              src={pageConfig.logo ?? '/logo.svg'}
-              h={56}
-              w={{ base: 140, sm: 190 }}
-              fit="contain"
-              alt="logo"
-            />
+            {/* === 1. 这里是强制变黑的指令 (不用动 config 文件了) === */}
+                  <style>{`
+                    /* 强制背景变深黑 */
+                    body, html, #root { background-color: #111827 !important; color: white !important; }
+                    /* 强制卡片变深灰 */
+                    div[class*="bg-white"] { background-color: #1f2937 !important; border-color: #374151 !important; }
+                    /* 强制文字颜色 */
+                    .text-slate-900, .text-gray-900 { color: white !important; }
+                    .text-slate-500, .text-gray-500 { color: #9ca3af !important; }
+                    /* 链接颜色 */
+                    a { color: #9333ea !important; }
+                  `}</style>
+
+                  {/* === 2. 这里是你的紫色 Logo === */}
+                  <h1 style={{ 
+                    color: '#9333ea', 
+                    fontSize: '28px', 
+                    fontWeight: '900', 
+                    margin: 0, 
+                    lineHeight: '1',
+                    fontFamily: 'system-ui, -apple-system, sans-serif'
+                  }}>
+                    Velo.x
+                  </h1>
           </a>
         </div>
 
