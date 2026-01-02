@@ -2,9 +2,11 @@ import { Divider } from '@mantine/core'
 import { pageConfig } from '@/uptime.config'
 
 export default function Footer() {
-  const defaultFooter =
-    '<p style="text-align: center; font-size: 12px; margin-top: 10px;"> Open-source monitoring and status page powered by <a href="https://github.com/lyc8503/UptimeFlare" target="_blank">Uptimeflare</a>, made with ❤ by <a href="https://github.com/lyc8503" target="_blank">lyc8503</a>. </p>'
-
+  const defaultFooter = `
+    <p style="text-align: center; font-size: 12px; color: #888; margin-top: 10px;">
+      &copy; 2026 <a href="https://222382.xyz" style="color: inherit; text-decoration: none; font-weight: bold;">Velo.x</a> 全球运维指挥中心
+    </p>
+  `;
   return (
     <>
       <Divider mt="lg" />
