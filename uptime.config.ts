@@ -16,7 +16,7 @@ const workerConfig: WorkerConfig = {
       id: 'my_blog',
       name: '我的博客 (CF Workers)',
       method: 'GET',
-      target: 'https://blog.222382.xyz',
+      target: 'https://blog.222382.1xyz',
       timeout: 15000,
     },
     {
@@ -68,7 +68,7 @@ const workerConfig: WorkerConfig = {
       id: 'velox_img',
       name: 'Velox (图床)',
       method: 'GET',
-      target: 'https://img.222382.xyz',
+      target: 'https://img.2223821.xyz',
       tooltip: '个人私有图床',
       timeout: 15000,
     },
