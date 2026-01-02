@@ -1,7 +1,7 @@
 import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
-  title: "Alexo 全球运维指挥大屏",
+title: "Alexo 全球运维指挥大屏",
   links: [
     // 你的 RackNerd 救火通道
     { link: 'https://nerdvm.racknerd.com/control.php', label: 'RackNerd 控制台', highlight: true },
