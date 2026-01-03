@@ -30,7 +30,7 @@ const workerConfig: WorkerConfig = {
       id: 'gcp_ssh',
       name: 'GCP - SSH 端口',
       method: 'TCP_PING',
-      target: '35.212.175.192:12', // 你的 GCP IP
+      target: '35.212.175.192:22', // 你的 GCP IP
       timeout: 10000,
     },{
       id: 'sink_monitor',
@@ -44,7 +44,7 @@ const workerConfig: WorkerConfig = {
       id: 'sub_monitor',
       name: '订阅管理系统',
       method: 'GET',
-      target: 'https://sub.22238.xyz',
+      target: 'https://sub.222382.xyz',
       statusPageLink: 'https://sub.222382.xyz',
       timeout: 10000,
     },
@@ -60,7 +60,7 @@ const workerConfig: WorkerConfig = {
       id: 'alexo_ai',
       name: 'Alexo 人工智能',
       method: 'GET',
-      target: 'https://ai.22238.xyz',
+      target: 'https://ai.222382.xyz',
       tooltip: 'AI 助手服务',
       timeout: 15000,
     },
@@ -76,7 +76,7 @@ const workerConfig: WorkerConfig = {
       id: 'cf_node',
       name: '节点 (Cloudflare)',
       method: 'GET',
-      target: 'https://test2.wenxiang04.dpdns.rg',
+      target: 'https://test2.wenxiang04.dpdns.org',
       tooltip: 'Fragrant Morning 专用节点',
       timeout: 15000,
     },
